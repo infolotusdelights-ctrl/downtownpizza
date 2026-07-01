@@ -1,0 +1,115 @@
+/* ==========================================================
+   Downtown Pizza Studio
+   Global Styles
+   Version: 1.0
+========================================================== */
+
+/* ---------- CSS VARIABLES ---------- */
+
+:root{
+
+    --primary:#C8102E;
+    --primary-dark:#980B22;
+
+    --secondary:#111111;
+
+    --accent:#F8B400;
+
+    --background:#FFF8F2;
+
+    --surface:#FFFFFF;
+
+    --text:#202020;
+
+    --text-light:#6B7280;
+
+    --border:#ECECEC;
+
+    --success:#2ECC71;
+
+    --danger:#E74C3C;
+
+    --shadow:0 20px 50px rgba(0,0,0,.08);
+
+    --radius:20px;
+
+    --transition:.35s ease;
+
+    --max-width:1400px;
+}
+
+/* ---------- RESET ---------- */
+
+*,
+*::before,
+*::after{
+
+    margin:0;
+    padding:0;
+
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+    line-height:1.6;
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+
+    font-family:inherit;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+}
+
+input,
+select,
+textarea{
+
+    font-family:inherit;
+
+    outline:none;
+}
+
+ul{
+
+    list-style:none;
+}
+
+.container{
+
+    width:min(92%,var(--max-width));
+
+    margin:auto;
+}
