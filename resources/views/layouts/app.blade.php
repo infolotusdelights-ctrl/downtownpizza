@@ -82,9 +82,15 @@
 
     <div id="app">
 
+    @include('components.navbar')
+
+    <main>
+
         @yield('content')
 
-    </div>
+    </main>
+
+</div>
 
     <!-- Scroll To Top -->
 
