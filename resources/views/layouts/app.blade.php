@@ -44,9 +44,10 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
     @vite([
-        'resources/css/app.css',
-        'resources/js/app.js'
-    ])
+    'resources/css/app.css',
+    'resources/css/navbar.css',
+    'resources/js/app.js'
+])
 
     @stack('styles')
 
