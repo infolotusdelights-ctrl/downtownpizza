@@ -3,7 +3,10 @@
 @section('title', 'Downtown Pizza Studio | Build Your Own Pizza')
 
 @push('styles')
-    @vite('resources/css/home.css')
+    @vite([
+        'resources/css/home.css',
+        'resources/js/home.js'
+    ])
 @endpush
 
 @section('content')
@@ -54,15 +57,36 @@
 
         <div class="hero-right">
 
-            <img
+    <div class="pizza-wrapper">
 
-                src="{{ asset('assets/images/hero-pizza.png') }}"
+        <img
+            src="{{ asset('assets/images/hero-pizza.png') }}"
+            class="hero-pizza"
+            alt="Pizza">
 
-                alt="Pizza"
+        <img
+            src="{{ asset('assets/images/tomato.png') }}"
+            class="floating tomato"
+            alt="Tomato">
 
-                class="hero-pizza">
+        <img
+            src="{{ asset('assets/images/onion.png') }}"
+            class="floating onion"
+            alt="Onion">
 
-        </div>
+        <img
+            src="{{ asset('assets/images/olive.png') }}"
+            class="floating olive"
+            alt="Olive">
+
+        <img
+            src="{{ asset('assets/images/corn.png') }}"
+            class="floating corn"
+            alt="Corn">
+
+    </div>
+
+</div>
 
     </div>
 
